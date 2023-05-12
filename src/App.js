@@ -6,16 +6,11 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 
-// Individual imports
-/*
-import { faBell } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import {} from '@fortawesome/free-regular-svg-icons'
-*/
-
 // default
 import logo from './logo.svg';
 import './App.css';
+
+import QuoteGenerator from './quote.js';
 
 function App() {
   return (
@@ -38,6 +33,8 @@ function App() {
        {/* react */}
        <FontAwesomeIcon icon="fa-brands fa-twitter" />
        
+       <QuoteGenerator />
+       
       </header>
     </div>
   );
@@ -45,8 +42,3 @@ function App() {
 
 export default App;
 library.add(fab, fas, far)
-
-/* // Individual imports
-    <FontAwesomeIcon icon={faBell} />
-    <FontAwesomeIcon icon={faTwitter} />
-*/
