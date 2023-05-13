@@ -1,37 +1,30 @@
-/*
-import {useEffect} from 'react';
-import {useRef} from 'react';
+/* 	Component to generate quotes 
+	Reference: https://dev.to/codemediaweb/random-quote-generator-using-javascript-and-api-20ce
 */
 
-export default function QuoteGenerator() {	
+export default function QuoteButton() {	
 	const handleClick = () => {	
 		let quote = document.getElementById("quote");
 		let author = document.getElementById("author");
-		
-		const url = "https://api.quotable.io/random";
-		
-		let getQuote = () => {
-  		fetch(url)
-    		.then((data) => data.json())
-    		.then((item) => {
-      		quote.innerText = item.content;
-      		author.innerText = item.author;
-    		});
-		};
-		
-		getQuote();		
+
+		// get data and update html
+  		const url = "https://api.quotable.io/random";
+  		
+  		let api = fetch(url);
+  		let api_json = api.then( (data) => data.json() );
+    	
+    	api_json.then( 
+    		(item) => {
+      			quote.innerText = '"' + item.content + '"';
+      			author.innerText = "- " + item.author; 
+      		}
+    	);	
 	};
  
 	// JSX
 	return (	
-		<div>
-			<p id="quote">
-    			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
-			</p>
-			
-			<h3 id="author">Lorem, ipsum.</h3>
-			
-			<button onClick={handleClick} id="btn">Get Quote</button>
+		<div>			
+			<button className="btn btn-secondary" onClick={handleClick}>Get Quote</button>
 		</div>
 	);
 }
