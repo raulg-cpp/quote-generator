@@ -14,21 +14,21 @@ import QuoteButton from './quote.js';
 
 function App() {
 	return (
-		<div className="d-flex justify-content-center align-items-center bg-dark">
-			<div className="w-50 bg-light p-3 rounded">
+		<div id="main_box" className="App d-flex justify-content-center align-items-center">
+			<div className="w-50 bg-light p-3 rounded shadow-lg">
 				{/* Text */} 
 				<div className="">
-					<h4 className="m-2" id="quote">Click the button to get a quote</h4>
+					<h4 className="Quote m-2" id="quote">Click the button to get a quote</h4>
 					<p className="text-end text-secondary" id="author">Author</p>
 				</div>
 				{/* Buttons */}
 				<div className="d-flex justify-content-between">
 					<div className="">
-						<a className="mx-1 btn btn-primary" href="">
+						<a className="btn btn-primary" href="">
 							<FontAwesomeIcon icon="fa-brands fa-twitter" />
 						</a>
 						
-						<a className="mx-1 btn btn-primary" href="">
+						<a className="mx-2 btn btn-primary" href="">
 							<FontAwesomeIcon icon="fa-brands fa-tumblr" />
 						</a>
 					</div>
