@@ -5,8 +5,17 @@
 	https://www.slingacademy.com/article/how-to-generate-random-color-in-javascript/
 */
 
-
 export default function QuoteButton() {	
+	const updateLinks = (quote) => {
+		let format_quote = encodeURIComponent(quote);
+	
+		let twitter = document.getElementById('twitter_button');
+		let tumblr = document.getElementById('tumblr_button');
+
+		twitter.href = encodeURI('https://twitter.com/intent/tweet/?text=' + format_quote);
+		tumblr.href = encodeURI('https://www.tumblr.com/widgets/share/tool?canonicalUrl=&caption=');
+	};
+
 	const updateContent = () => {	
 		let quote = document.getElementById("quote");
 		let author = document.getElementById("author");
@@ -22,7 +31,11 @@ export default function QuoteButton() {
       			quote.innerText = '"' + item.content + '"';
       			author.innerText = "- " + item.author; 
       		}
-    	);	
+    	);
+    	
+    	// buttons
+    	let quote_author = quote.innerText + author.innerText;
+    	updateLinks(quote_author);	
 	};
 	
 	const randomRgbColor = () => {
@@ -40,8 +53,7 @@ export default function QuoteButton() {
 		main_box.style.backgroundColor = color;
 		quote.style.color = color;
 	};
- 
- 
+	 
  	const handleClick = () => {	
  		updateContent();
  		updateStyle();

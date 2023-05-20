@@ -30,6 +30,22 @@ https://www.youtube.com/watch?v=Tad3gdblZV4
 __General__:
 https://getbootstrap.com/docs/5.0/utilities/text/
 
+__Tool tips__:
+https://getbootstrap.com/docs/5.2/components/tooltips/
+
+https://react-tooltip.com/docs/getting-started
+
+https://react-bootstrap.github.io/components/overlays/#tooltips
+
+
+## CSS
+
+__Tool tips__:
+https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom
+
+https://www.florin-pop.com/blog/2019/05/pure-css-tooltip/
+
+
 ## FontAwesome [Icons]
 
 https://fontawesome.com/docs/web/use-with/react/
@@ -53,6 +69,14 @@ https://fontawesome.com/docs/web/use-with/react/add-icons#add-icons-globally
 https://spacejelly.dev/posts/how-to-create-css-custom-properties-that-dynamically-update-with-react-javascript/
 
 https://www.slingacademy.com/article/how-to-generate-random-color-in-javascript/
+
+https://stackoverflow.com/questions/4689344/how-can-i-add-href-attribute-to-a-link-dynamically-using-javascript
+
+https://stackoverflow.com/questions/4689344/how-can-i-add-href-attribute-to-a-link-dynamically-using-javascript
+
+https://www.urlencoder.io/javascript/
+
+https://www.freecodecamp.org/news/javascript-url-encode-example-how-to-use-encodeuricomponent-and-encodeuri/
 
 ### CSS
 
