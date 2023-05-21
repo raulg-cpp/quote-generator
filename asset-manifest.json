@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/raulg-cpp/quote-generator/static/css/main.cfd1e9ee.css",
+    "main.js": "/raulg-cpp/quote-generator/static/js/main.da324559.js",
+    "static/js/787.c1112931.chunk.js": "/raulg-cpp/quote-generator/static/js/787.c1112931.chunk.js",
+    "index.html": "/raulg-cpp/quote-generator/index.html",
+    "main.cfd1e9ee.css.map": "/raulg-cpp/quote-generator/static/css/main.cfd1e9ee.css.map",
+    "main.da324559.js.map": "/raulg-cpp/quote-generator/static/js/main.da324559.js.map",
+    "787.c1112931.chunk.js.map": "/raulg-cpp/quote-generator/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfd1e9ee.css",
+    "static/js/main.da324559.js"
+  ]
+}
