@@ -49,6 +49,9 @@ https://react-bootstrap.github.io/components/overlays/#tooltips
 
 ## CSS
 
+__General__:
+https://css-tricks.com/almanac/properties/t/transition/
+
 __Tool tips__:
 https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom
 
@@ -87,7 +90,4 @@ https://www.urlencoder.io/javascript/
 
 https://www.freecodecamp.org/news/javascript-url-encode-example-how-to-use-encodeuricomponent-and-encodeuri/
 
-### CSS
-
-https://css-tricks.com/almanac/properties/t/transition/
-
+https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
