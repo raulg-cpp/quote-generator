@@ -1,19 +1,19 @@
 /* 	Component to generate quotes 
-	Reference: https://dev.to/codemediaweb/random-quote-generator-using-javascript-and-api-20ce
-*/
-/* 	References:
+	Reference: 
+	https://dev.to/codemediaweb/random-quote-generator-using-javascript-and-api-20ce
 	https://www.slingacademy.com/article/how-to-generate-random-color-in-javascript/
 */
 
-export default function QuoteButton() {	
+export default function QuoteButton() {
+	//==== functions ====
 	const updateLinks = (quote) => {
 		let format_quote = encodeURIComponent(quote);
 	
 		let twitter = document.getElementById('twitter_button');
-		let tumblr = document.getElementById('tumblr_button');
+		//let tumblr = document.getElementById('tumblr_button');
 
 		twitter.href = encodeURI('https://twitter.com/intent/tweet/?text=' + format_quote);
-		tumblr.href = encodeURI('https://www.tumblr.com/widgets/share/tool?canonicalUrl=&caption=');
+		//tumblr.href = encodeURI('https://www.tumblr.com/widgets/share/tool?canonicalUrl=&caption=');
 	};
 
 	const updateContent = () => {	
@@ -45,7 +45,7 @@ export default function QuoteButton() {
   		return 'rgb(' + r + ',' + g + ',' + b + ')';
 	};
 	
-	const updateStyle = () => {
+	const updateColors = () => {
 		let main_box = document.getElementById("main_box");	
 		let quote = document.getElementById("quote");
 		
@@ -53,13 +53,25 @@ export default function QuoteButton() {
 		main_box.style.backgroundColor = color;
 		quote.style.color = color;
 	};
+
+  	const fadeText = () => {
+  		// fade-out 
+		let box = document.getElementById("text_box");
+		box.style.opacity = 0.0;	
+		
+		// update after fade-out
+		setTimeout( () => {
+			updateContent();
+			box.style.opacity = 1.0;
+		}, 1000); 							// Fadeout delay in ms
+  	}
 	 
- 	const handleClick = () => {	
- 		updateContent();
- 		updateStyle();
+ 	const handleClick = () => {	 	
+ 		fadeText();
+ 		updateColors();
  	};
  
-	// JSX
+	//==== JSX ====
 	return (	
 		<div>			
 			<button className="btn btn-secondary" onClick={handleClick}>Get Quote</button>

@@ -20,8 +20,8 @@ function App() {
 		<div id="main_box" className="App d-flex justify-content-center align-items-center">
 			<div className="w-50 bg-light p-3 rounded shadow-lg">
 				{/* Text */} 
-				<div className="m-3">
-					<h4 className="Quote fade-in-text" id="quote">Click the button to get a quote</h4>
+				<div className="m-3 TextBox" id="text_box">
+					<h4 className="Quote" id="quote">Click the button to get a quote</h4>
 					<p className="text-end text-secondary" id="author">Author</p>
 				</div>
 				{/* Buttons */}
@@ -31,7 +31,7 @@ function App() {
 						<a  data-tooltip-id="twitter_button"
   							data-tooltip-content="Tweet this quote!"
   							data-tooltip-place="bottom"
-						   	id="twitter_button" className="btn btn-primary" href=""
+						   	id="twitter_button" href="/" className="btn btn-secondary"
 						>
 							<FontAwesomeIcon icon="fa-brands fa-twitter" />
 						</a>
@@ -39,8 +39,8 @@ function App() {
 						<a data-tooltip-id="tumblr_button"
   						   data-tooltip-content="Post this quote on Tumblr!"
   						   data-tooltip-place="bottom"
-						   id="tumblr_button" className="mx-2 btn btn-primary" href=""
-						>
+						   id="tumblr_button" href="https://www.tumblr.com" className="mx-2 btn btn-secondary"
+						>			
 							<FontAwesomeIcon icon="fa-brands fa-tumblr" />
 						</a>
 						

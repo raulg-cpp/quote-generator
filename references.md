@@ -2,6 +2,7 @@
 
 ## React [Framework]
 
+__General__:
 https://random-quote-machine.freecodecamp.rocks
 
 https://react.dev/learn
@@ -13,6 +14,14 @@ https://react.dev/learn/importing-and-exporting-components
 https://bobbyhadz.com/blog/react-get-element-by-id
 
 https://dev.to/mcrowder65/how-to-center-elements-horizontally-on-a-create-react-app-project-1omn
+    
+__CSS__:
+https://bionicjulia.com/blog/creating-react-component-fades-changing-words
+    
+__State__:
+https://www.w3schools.com/react/react_useeffect.asp
+
+https://www.w3schools.com/react/showreact.asp?filename=demo2_react_useeffect_settimeout3
     
 ## Bootstrap [Css styling]
 
