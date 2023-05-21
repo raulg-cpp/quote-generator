@@ -1,5 +1,13 @@
 # References - Bootstrap and FontAwesome in React
 
+## Github pages
+https://github.com/gitname/react-gh-pages
+
+https://github.com/gitname/react-gh-pages/issues/3
+
+https://www.youtube.com/watch?v=gtODigNB6Is
+
+
 ## React [Framework]
 
 __General__:
@@ -75,6 +83,7 @@ https://stackoverflow.com/questions/71356327/error-caching-was-left-unconfigured
 https://babeljs.io/docs/configuration
 
 https://fontawesome.com/docs/web/use-with/react/add-icons#add-icons-globally
+
 
 ### Javascript
 
