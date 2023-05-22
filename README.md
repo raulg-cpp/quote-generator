@@ -8,3 +8,6 @@ The page uses:
 - [React-Tooltip](https://www.npmjs.com/package/react-tooltip)
 - [BootStrap](https://getbootstrap.com/docs/5.2/getting-started/download/)
 - [FontAwesome](https://fontawesome.com/). 
+
+## Preview
+See the page at: https://raulg-cpp.github.io/quote-generator/
