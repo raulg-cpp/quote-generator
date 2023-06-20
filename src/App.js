@@ -10,9 +10,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { Tooltip } from 'react-tooltip'
 
 // default
-//import logo from './logo.svg';
 import './App.css';
-
 import QuoteButton from './quote.js';
 
 function App() {

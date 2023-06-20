@@ -4,7 +4,15 @@
 	https://www.slingacademy.com/article/how-to-generate-random-color-in-javascript/
 */
 
+import { useEffect } from 'react';
+
 export default function QuoteButton() {
+	//==== Initialize ===
+	
+	/* Load on startup */
+    // eslint-disable-next-line
+    useEffect( () => { handleClick() } ); 
+
 	//==== functions ====
 	const updateLinks = (quote) => {
 		let format_quote = encodeURIComponent(quote);
