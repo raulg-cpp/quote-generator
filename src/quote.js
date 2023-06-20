@@ -46,12 +46,16 @@ export default function QuoteButton() {
 	};
 	
 	const updateColors = () => {
+		// Text
 		let main_box = document.getElementById("main_box");	
 		let quote = document.getElementById("quote");
+		let author = document.getElementById("author");
 		
-		let color = randomRgbColor();
+		// style
+		let color = randomRgbColor();		
 		main_box.style.backgroundColor = color;
 		quote.style.color = color;
+		author.style.color = color;
 	};
 
   	const fadeText = () => {
@@ -62,19 +66,19 @@ export default function QuoteButton() {
 		// update after fade-out
 		setTimeout( () => {
 			updateContent();
+			updateColors();
 			box.style.opacity = 1.0;
 		}, 1000); 							// Fadeout delay in ms
   	}
 	 
  	const handleClick = () => {	 	
  		fadeText();
- 		updateColors();
  	};
  
 	//==== JSX ====
 	return (	
 		<div>			
-			<button className="btn btn-secondary" onClick={handleClick}>Get Quote</button>
+			<button className="btn btn-outline-primary" onClick={handleClick}>Get Quote</button>
 		</div>
 	);
 }
